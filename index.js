@@ -1,10 +1,11 @@
 let katzDeliLine = [];
+let counter = 0;
 
-function takeANumber(katzDeliLine, name){
-  katzDeliLine.push(name);
-    return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
+function takeANumber(){
+    counter++
+    return `You are number ${counter} in line.`;
 }
-takeANumber(Ada);
+//takeANumber(Ada);
 
 
 function nowServing(katzDeliLine) {
@@ -24,3 +25,6 @@ let number = line.map((name, index) => `${index+1}. ${name}`);
     return `The line is currently: ${number.join(", ")}`
   } 
 }
+
+
+
